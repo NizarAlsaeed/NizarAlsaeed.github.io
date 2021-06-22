@@ -8,6 +8,6 @@ My Name is Nizar Alsaeed, i am an electrical engineer and a software engineering
 
 ### content
 
-- [Reading Notes](https://nizaralsaeed.github.io/ReadingNotes/)
+- [Reading Notes](https://nizaralsaeed.github.io/reading-notes/)
 
 
