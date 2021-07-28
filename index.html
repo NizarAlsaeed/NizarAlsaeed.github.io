@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nizar Alsaeed, Software Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main>
+      <!-- ***************  ABOUT / PROFILE  **************** -->
+      <header>
+		<div class="container">
+			<h1>Nizar Alsaeed</h1>
+			<h2>Software Developer</h2>
+
+			<p>Python developer with background in electrical engineering 
+			and project management.<br/> Passionate about Artificial Intelligence 
+			and for customer-focused solutions.</p>
+		</div>
+	  </header>
+
+      <!-- ************ PROJECTS / PORTFOLIO  ************** -->
+      <section class="projects">
+	  	<div class="container divider">
+			<h2>Featured Projects</h2>
+			<p>View selected projects below, do not hesitate to contact me for more information.</p>
+
+			<!-- Project 1 -->
+			<section class="project-wrap">			  
+			  <img src="images/doctorizer.png" alt="Doctoraizer">
+			  <div>
+				  <h3>Doctorizer</h3>
+				  <p> A desktop application that analyzes the x-ray chest images and detects abnormalities in the lung in order to help discover a possible infection with COVID-19 virus.</p>
+				  <ul> 
+					<li> Built with Python, using Tkinter for the GUI, Keras for the CNN model, and SQLite.</li>
+					<li>Team leader, and responsible for the GUI and the CNN model.</li>
+				  </ul>
+				  <a class="btn" target="_blank" onclick="toggle();">View demo video</a>
+			  </div>
+			  <div class="doctorizer-video-container" onclick="toggle();">
+				 <video src="./videos/doctorizer_demo.mp4" controls="true" />
+			  </div>
+			</section>
+
+			<!-- Project 2 -->
+			<section class="project-wrap">
+			  <img src="images/rahhaleh.png" alt="Rahhaleh">
+			  <div>
+				  <h3>Rahhaleh</h3>
+				  <p>Rahhaleh is a website to search for flight information and review your flights to contribute to the airlines rating community.</p>
+				  <ul>
+					<li>Built with JavaScript, HTML, CSS, using EJS, Node.js/Express for the server, and PostgreSQL.</li>
+					<li>Team leader, and responsible for the community and the rating system.</li>
+				  </ul>
+				  <a class="btn" href="https://rahhaleh.herokuapp.com" target="_blank">View live site</a>
+			  </div>
+			</section>
+
+			<!-- Project 4 -->
+			<section class="project-wrap">			  
+			  <img src="images/formsanalyzer.png" alt="Quizy-Buzzy">
+			  <div>
+				  <h3>Google Forms Analyzer</h3>
+				  <p> A website where you can upload the spreadsheet/Excel file from google forms data,then the website plots all possible charts for the data inside the sheet.</p>
+				  <ul>
+					<li>Built with Chart.js and Bootstrap.</li>
+					<li>personal project</li>
+				  </ul>
+				  <a class="btn" href="https://nizaralsaeed.github.io/formsAnalyser/" target="_blank">View live site</a>
+			  </div>
+			</section>
+			
+
+		</div>
+	  </section>
+
+      <!-- ***************  WORK EXPERIENCE  ***************** -->
+      <section class="work">
+	  	<div class="container divider pnm">
+			<h2>Work Experience</h2>
+
+			<!-- Job 1 -->
+			<section>
+			  <div class="job-summary">
+				  <h3>Engineering Project Lead</h3>
+				  <p>Royal Taflous Racing Team</p>
+				  <p>2019 - 2021</p>
+			  </div>
+			  <div class="job-details">
+				  <p>Managed the engineering design and manufacturing processes.</p>
+			  </div>
+			</section>
+			
+			<!-- Job 2 -->
+			<section>
+			  <div class="job-summary">
+				  <h3>Electrical Engineering Intern</h3>
+				  <p>Jordan Electric Power Company (JEPCO)</p>
+				  <p>May-July 2020</p>
+			  </div>
+			  <div class="job-details">
+				  <p>Worked as a SCADA system operator for a Medium-voltage network.</p>
+			  </div>
+			</section>
+
+		</div>
+      </section>
+
+      <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+      <section class="edu">
+  	  	<div class="container pnm">
+			<div>
+				<h2>Education</h2>
+				<section>
+				  <h3>Abdul Aziz Al Ghurair School of Advanced Computing | Amman, Jordan</h3>
+				  <p>Certificate - Advanced Software Development in Python</p>
+				  <p>Intensive 6-months Full-time program covering Software Development technologies. <br/>Powered by <span><a href="https://www.codefellows.org/" target="blank">CodeFellows</a></span></p>
+				</section>
+
+
+				<section>
+				  <h3>Tafila Technical University | Tafila, Jordan</h3>
+				  <p>Bachelor Degree of Electrical Engineering </p>
+				</section>
+			</div>
+			<div>
+				<img src="./images/book.png" />
+			</div>
+		</div>
+      </section>
+
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <footer>
+	  <div class="container">
+			<ul>
+			  <li><a href="mailto:nizar.ayman@live.com"><img src="./images/mail.png" /></a></li>
+			  <li><a href="https://www.linkedin.com/in/nizaralsaeed/" target="_blank"><img src="./images/linkedin.png" /></a></li>
+			  <li><a href="https://www.github.com/nizaralsaeed/" target="_blank"><img src="./images/github.png" /></a></li>
+			</ul>
+		</div>
+      </footer>
+    </main>
+	<script>
+		function toggle(){
+			let videoContainer= document.querySelector(".doctorizer-video-container");
+			let video= document.querySelector("video");
+			
+			console.log(videoContainer.classList.toggle("active"));
+			video.pause();
+			video.currentTime =0;
+		}
+	</script>
+  </body>
+</html>
