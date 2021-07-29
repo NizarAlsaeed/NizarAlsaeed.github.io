@@ -19,6 +19,7 @@ body{
 	padding:0;
 	font-family: Trebuchet MS,verdana,arial;
 	line-height: 1.5;
+	overflow-x: hidden;
 }
 img {
 	width:300px; 
@@ -92,7 +93,6 @@ header{
 	color:var(--fontColor1);
 	text-align:center;
 }
-
 
 /*PROJECTS / PORTFOLIO
 ---------------------------------------------*/
@@ -193,24 +193,14 @@ footer{
 	text-align:center;
 
 }
-footer ul{
-	list-style-type:none;
-	
-}
-footer li{
-	display:inline;
-}
 footer img {
-	display:inline;
 	filter:invert(1);
 	width:35px;
 	margin: 0 10px;
 }
-footer .container ul a{
-	color:var(--fontColor1);
-
+footer .container{
+	text-align:center;
 }
-
 
 /*RESPONSIVE
 ---------------------------------------------*/
