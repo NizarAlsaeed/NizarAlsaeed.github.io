@@ -12,7 +12,9 @@
 
 /*General selectors
 ---------------------------------------------*/
-
+html{
+	overflow-x: hidden;
+}
 body{
 	width:100%;
 	margin:0;
